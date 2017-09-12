@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Return</title>
+
+</head>
+<body>
+  <div>
+    <p> Name:  <%= results.name %></p>
+    <p> Location:  <%= results.dojo_loc %> </p>
+    <p> Favorite language:  <%= results.fav_lang %> </p>
+    <p> <%= results.comment %> </p>
+
+    <form action='/'>
+      <input type='submit' value='Go Back'>
+    </form>
+
+  </div>
+</body>
+</html>

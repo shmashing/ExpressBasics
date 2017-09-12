@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BLANK_TITLE</title>
+  <meta name="description" content="BLANK DESCRIPTION">
+  <link rel="stylesheet" href="{% static 'surveys/css/main.css' %}" media="screen" title="no title"  charset="utf-8">
+</head>
+
+<body>
+  <div>
+    <form action='/form_return' method='post'>
+    <table>
+      <thead></thead>
+      <tbody>
+        <tr>
+          <td> Your Name:</td>
+          <td><input type='text' name='name'></td> 
+        </tr>
+        <tr>
+          <td> Dojo Location:</td>
+          <td>
+            <select name='dojo_loc'>
+              <option value='seattle'>Seattle</option>
+              <option value='los_angeles'>Los Angeles</option>
+              <option value='silicon_val'>Silicon Valley</option>
+              <option value='dallas'>Dallas</option>
+              <option value='wash_dc'>Washington D.C.</option>
+              <option value='chicago'>Chicago</option>
+              <option value='tulsa'>Tulsa</option>
+            </select>
+          </td> 
+        </tr>
+        <tr>
+          <td> Favorite Language:</td>
+          <td>
+            <select name='fav_lang'>
+              <option value='python'>Python</option>
+              <option value='c#'>C#</option>
+              <option value='ruby'>Ruby</option>
+              <option value='swift'>Swift</option>
+              <option value='javascript'>JavaScript</option>
+              <option value='c'>C</option>
+              <option value='c++'>C++</option>
+            </select>
+          </td> 
+        </tr>
+        <tr>
+          <td>Comment (optional):</td>
+        </tr> 
+      </tbody>
+    </table>
+
+    <textarea height=50 name='comment' value=''></textarea>
+
+    <p>
+        <input type='submit' value='Submit'>
+    </p>
+    </form>
+
+  </div>
+
+</body>
+</html>
